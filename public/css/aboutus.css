@@ -1,0 +1,198 @@
+.academy-intro h2{
+  font-family: "Salsa", cursive;
+}
+.academy-intro p{
+  font-family: "Alegreya";
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.section h2 {
+  font-family: "Salsa", cursive;
+}
+.section ul li {
+  list-style-type: none;
+  padding-left: 0; /* Remove default padding */
+  font-size: 1.2rem;
+  font-weight: 480;
+  font-family: "Alegreya";
+}
+.section p{
+  text-align: justify;
+  font-size: 1.2rem;
+    font-family: "Alegreya";
+}
+.section ul li::before {
+  content: "\2713";
+  color: #ff6f61;
+  display: inline-block;
+  width: 1.5em;
+  font-weight: 1000; /* Make the checkmark bolder */
+}
+.ceo-section h2{
+  font-family: "Salsa", cursive;
+}
+#ceo-intro {
+  display: flex;
+  font-family: "Alegreya";
+}
+.ceo-message {
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 15px;
+  font-family: "Alegreya";
+  p{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-align: justify;
+    hyphens: auto;
+  }
+  h1{
+    font-size: 1.5rem;
+    font-style: bold;
+  }
+}
+
+
+.ceo-message p:last-child {
+  margin-bottom: 0;
+}
+.ceo-pic {
+  position: relative;
+  top: 20px;
+  width: 50%;
+  margin-right: 20px;
+}
+.ceo-img {
+  border-radius: 5%;
+  margin-bottom: 10px;
+  padding-top: 150px;
+  background-color: rgb(211, 200, 222);
+}
+.custom-list {
+  list-style-type: none;
+}
+
+.custom-list li::before {
+  content: "\2713";
+  color: #007bff; /* Adjust color as needed */
+  font-weight: bold; /* Make the tick mark bold */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.vision-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin-top: 40px;
+}
+#mission {
+  width: 40%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+  h2{
+    font-family: "Salsa", cursive;
+  }
+  p{
+    font-family: "Alegreya";
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-align: justify;
+    hyphens: auto;
+  }
+}
+#vision {
+  h2{
+    font-family: "Salsa", cursive;
+  }
+  p{
+    font-family: "Alegreya";
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-align: justify;
+    hyphens: auto;
+  }
+  width: 40%;
+  position: relative;
+  top: -5px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  
+}
+
+@media only screen and (max-width:480px)and (min-width:320px){
+  #ceo-intro {
+    display: flex;
+    flex-direction: column;
+  }
+  .ceo-message {
+    top: 10px;
+    border-radius: 0px;
+    margin-left: 0px;
+  }
+  
+  .ceo-message h1 {
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .ceo-message p {
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .ceo-message p:last-child {
+    margin-bottom: 0;
+  }
+  .ceo-pic {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    margin-right: 0px;
+  }
+  .ceo-img {
+    border-radius: 5%;
+    margin-bottom: 10px;
+    padding-top:50px;
+    background-color: rgb(211, 200, 222);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .vision-section {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content: start;
+    padding: 0px;
+    margin-top: 10px;
+  }
+  #mission {
+    width: 100%;
+    text-align: justify;
+    hyphens: auto;
+  }
+  #vision {
+    width: 100%;
+    position: relative;
+    top: 10px;
+    text-align: justify;
+    hyphens: auto;
+  }
+}

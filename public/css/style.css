@@ -1,0 +1,758 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: beige;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* header */
+.header {
+  max-width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: rgb(108, 153, 57);
+  padding-bottom: 10px;
+}
+
+#call_logo a {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  text-decoration: none;
+  img {
+    height: 23px;
+    width: 22px;
+  }
+  p {
+    position: relative;
+    top: 19px;
+    left: 5px;
+    color: rgb(188, 255, 54);
+    font-size: 15px;
+  }
+  p:hover {
+    text-decoration: underline;
+    color: rgb(181, 221, 234);
+  }
+}
+#whatsapp_logo a {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  text-decoration: none;
+  img {
+    height: 19px;
+    width: 24px;
+    border-radius: 5px;
+    background-color: #f5f1f1;
+  }
+  p {
+    position: relative;
+    top: 19px;
+    left: 5px;
+    color: rgb(188, 255, 54);
+    font-size: 15px;
+  }
+  p:hover {
+    text-decoration: underline;
+    color: rgb(181, 221, 234);
+  }
+}
+#mail_logo a {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  text-decoration: none;
+  img {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    top: 3px;
+  }
+  p {
+    position: relative;
+    top: 19px;
+    left: 5px;
+    color: rgb(188, 255, 54);
+    font-size: 15px;
+  }
+  p:hover {
+    text-decoration: underline;
+    color: rgb(181, 221, 234);
+  }
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  max-height: 120px;
+  max-width: 100%;
+  color: black;
+  text-align: center;
+  background-color: rgba(224, 232, 224, 0.688);
+}
+#navbar-logo a img {
+  position: relative;
+  left: 10%;
+  height: 195px;
+  width: 200px;
+  margin-top: -44px;
+}
+#navbar-logo a img:hover {
+  cursor: pointer;
+}
+
+.navbar-ul {
+  display: flex;
+  position: absolute;
+  left: 25%;
+  margin-top: 10px;
+}
+
+.navbar-li {
+  list-style: none;
+}
+
+.navbar-li a {
+  list-style: none;
+  padding: 20px;
+  position: relative;
+  display: inline-block; /* Ensure inline-block to fit text width */
+  color: rgb(0, 0, 0); /* Default text color */
+  font-size: 1.1rem;
+  font-weight: 550;
+  text-decoration: none;
+}
+
+.navbar-li a::after {
+  content: "";
+  position: absolute;
+  left: 50%; /* Position pseudo-element in the middle */
+  bottom: 8px;
+  transform: translateX(-50%); /* Adjust position to center it */
+  height: 2px;
+  width: 0; /* Initially set width to 0 */
+  background-color: rgb(0, 0, 0);
+  transition: width 0.5s ease; /* Transition width for animation */
+  list-style: none;
+}
+
+.navbar-li a:hover {
+  color: rgb(10, 5, 0); /* Change text color on hover */
+  cursor: pointer;
+}
+
+.navbar-li a:hover::after,
+.nav-link.active::after {
+  width: 65%; /* Expand width to 65% on hover or when active */
+  transition: width 0.5s ease; /* Smooth transition for underline */
+}
+
+.nav-link.active {
+  color: rgb(79, 78, 78); /* Active text color */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+#dropdown-icon {
+  display: none;
+}
+
+/* CONTAINER 1 */
+#container1 {
+  max-width: 100%;
+  height: 630px;
+  border: 2px solid black;
+  background: url(/public/images/pics/bg9.jpg) center/cover;
+}
+.container1-intro-text {
+  color: white;
+  max-width: 70%;
+  position: relative;
+  top: 50px;
+  left: 390px;
+  font-family: "Sofia Sans Condensed", sans-serif;
+  font: optical sizing 1px;
+  font-weight: 400;
+  font-style: normal;
+  h1 {
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+  }
+  h4 {
+    color: rgb(173, 216, 230);
+    margin-top: -7px;
+    line-height: 1.4;
+    font-size: 35px;
+  }
+}
+#Enroll_btn {
+  font-size: 19px;
+}
+#container1-hadith-text {
+  color: white;
+  width: 550px;
+  height: 300px;
+  margin-left: 36%;
+  margin-top: 70px;
+}
+#container1-hadith-text h4 {
+  text-align: end;
+  margin-bottom: 25px;
+  font-family: "Gulzar", serif;
+}
+#container1-hadith-text h1 {
+  left: 16%;
+  position: relative;
+  top: 30px;
+}
+#container1-hadith-text h3 {
+  color: rgb(173, 216, 230);
+  text-align: end;
+  font-family: "Sofia Sans Condensed", sans-serif;
+  font-size: 31px;
+  font-weight: 400;
+  font-style: normal;
+  p {
+    font-size: 16px;
+    color: white;
+  }
+}
+#container1-hadith-text h2 {
+  color: rgb(188, 252, 10);
+  text-align: end;
+  font-family: "Amiri", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* CONTAINER 2 */
+#container-2 {
+  display: flex;
+}
+#container2-pic {
+  position: relative;
+  height: 100%;
+  width: 35%;
+  left: 13%;
+  top: 7.5em;
+  order: 2;
+}
+#container2-pic img {
+  height: 33rem;
+  width: 100%;
+  border: 1px solid rgb(49, 49, 49);
+  border-radius: 2%;
+}
+#container2-text {
+  order: 1;
+  position: relative;
+  width: 45%;
+  left: 10%;
+  margin-top: 54px;
+}
+#container2-text h1 {
+  font-family: "Salsa", cursive;
+  font-weight: 400;
+}
+#container2-text p {
+  font-family: "Alegreya";
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* CONTAINER 3 */
+
+.container3 {
+  display: flex;
+  margin-top: 3rem;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  padding-bottom: 2rem;
+}
+.container3 h1 {
+  text-align: start;
+  font-family: "Salsa", cursive;
+  font-weight: 400;
+}
+.container3-img {
+  order: 1;
+}
+.container3-img img {
+  height: 26.6rem;
+  width: 29rem;
+  border-radius: 2%;
+  position: relative;
+  left: 29%;
+  top: 0.8rem;
+}
+#container3-text {
+  order: 2;
+  position: relative;
+  width: 40%;
+  left: 15%;
+}
+#container3-text h1 {
+  font-family: "Salsa", cursive;
+}
+#container3-text p {
+  font-family: "Alegreya";
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-align: justify;
+  hyphens: auto;
+}
+/* COURSE CONTAINER */
+#courses {
+  margin-top: 2rem;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  padding-bottom: 2rem;
+}
+#course-heading {
+  text-align: center;
+  font-family: "Salsa", cursive;
+  h2 {
+    font-size: 44px;
+  }
+}
+.course_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 50px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.course-card {
+  border: 1px solid rgb(207, 190, 190);
+  background-color: #fffffff0;
+  transition: transform 0.3s ease;
+  width: 320px;
+  height: 450px;
+  display: grid;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.course-card:hover {
+  cursor: pointer;
+  border: 1px solid black;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.course-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.course-card-content {
+  height: 270px;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.course-card-content h2 {
+  font-family: "Salsa", cursive;
+  font-size: 19px;
+}
+
+.course-card-content p {
+  font-family: "Alegreya";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.course-card-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* FEATURE CONTAINER */
+.feature-heading {
+  text-align: center;
+  font-family: "Salsa", cursive;
+  margin-top: 55px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3px;
+  grid-row-gap: 15px;
+  justify-items: center;
+  margin-top: 15px;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
+.cards {
+  width: 270px;
+  height: 400px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  margin: 10px 0px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  img {
+    border-radius: 50%;
+    height: 90px;
+    width: 93px;
+  }
+}
+.cards h5 {
+  font-size: 22px;
+  font-family: "Salsa", cursive;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.cards p {
+  font-size: 17px;
+  font-family: "Alegreya";
+  line-height: 1.4;
+  text-align: start;
+  hyphens: auto;
+}
+/* Animation and color effects */
+.cards:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.3);
+}
+#form-container {
+  border: 1px solid #8a8a8a;
+  border-radius: 9px;
+  background-color: #583866;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+}
+#free-trail h2{
+  text-align: center;
+  font-family: "Salsa", cursive;
+}
+#free-trial p{
+  font-family: "Alegreya";
+  font-weight: 700;
+  margin-top: 25px;
+  font-size: 1.3rem;
+  text-align: justify;
+  hyphens: auto;
+}
+/* Media Queries */
+
+/* Mobile devices ( - 374px) */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  #whatsapp_logo a {
+    padding: 0px 10px;
+  }
+  #call_logo a,
+  #mail_logo a {
+    display: none;
+  }
+  .navbar-ul {
+    display: none;
+  }
+  #navbar-logo a img {
+    left:0%;
+    
+  }
+  #dropdown-icon {
+    display: block;
+    margin-right: 20px;
+    width: 70px;
+    height: 60px;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #1B1B3B;
+    width: 43%; /* Ensure it spans the full width of the screen */
+    position: absolute;
+    left: 0;
+    top: -11px;
+    opacity: 0.95;
+    z-index: 1000; /* Higher z-index to ensure it's above other content */
+    transition: 0.5s ease; /* Add transition for smooth appearance */
+    padding: 0; /* Remove any default padding */
+  }
+
+  .navbar-li {
+    width: 100%; /* Ensure li spans the full width */
+  }
+
+  .navbar-li a {
+    display: flex;
+    padding: 20px 10px 10px 0px; /* Adjust padding for proper alignment */
+    margin: 0; /* Remove any default margin */
+    display: block; /* Make block-level to take full width */
+    width: 100%; /* Ensure it spans full width of sidebar */
+    color: #d5d4d4; /* Default text color */
+    font-size: 4vw; /* Converted font size to vw */
+    font-weight: 470;
+    border-bottom: 1px solid #3c3c78; /* Bottom border */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-decoration: none;
+  }
+  .navbar-li a:hover::after,
+  .nav-link.active::after {
+    width: 0; /* Remove underline on hover and active class */
+  }
+
+  .navbar-li a:hover,
+  .nav-link.active {
+    color: #79c5c8; /* Change color on hover and active class */
+  }
+
+  .sidebar.active {
+    transform: translateX(0); /* Move sidebar onto screen when active */
+  }
+
+  .close-btn {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .close-btn:hover {
+    background-color: #555;
+  }
+
+  /* CONTAINER 1 */
+  #container1 {
+    max-width: 100%;
+    border: 2px solid black;
+    /* background-image: url("/public/images/pics/m-bg2.jpg"),
+      url("/public/images/pics/m-bg4.jpg");
+    background-position: center top, center bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 50%, 100% 50%; */
+    background-image: url("/public/images/pics/m-bg.jpg");
+    z-index: 1; /* Lower z-index to ensure it's below sidebar */
+    position: relative; /* Ensure z-index takes effect */
+    background-color: black;
+  }
+  .container1-intro-text {
+    max-width: 100%;
+    color: white;
+    position: relative;
+    top: 46%;
+    left: 11%;
+    z-index: 1; /* Ensure it's below sidebar */
+
+    h1 {
+      font-size: 6.2vw; /* Converted font size to vw */
+      color: rgb(255, 255, 255);
+    }
+    h4 {
+      color: rgb(173, 216, 230);
+      margin-top: -10px;
+      line-height: 1.4;
+      font-size: 4.2vw; /* Converted font size to vw */
+    }
+  }
+  #Enroll_btn {
+    border: 1px solid rgb(87, 80, 115);
+    background-color: rgb(40, 40, 40);
+    font-size: 3vw; /* Converted font size to vw */
+  }
+  #container1-hadith-text {
+    color: white;
+    height: 20%;
+    max-width: 77%;
+    position: relative;
+    top: -12%;
+    right: 25%;
+  }
+  #container1-hadith-text h4 {
+    text-align: end;
+    margin-bottom: 0.9rem;
+    font-family: "Gulzar", serif;
+    font-size: 3.8vw; /* Converted font size to vw */
+  }
+
+  #container1-hadith-text h3 {
+    color: rgb(173, 216, 230);
+    text-align: end;
+    font-family: "Sofia Sans Condensed", sans-serif;
+    margin-top: -0.3rem;
+    font-size: 5.3vw; /* Converted font size to vw */
+    font-weight: 400;
+    font-style: normal;
+    p {
+      font-size: 3.4vw; /* Converted font size to vw */
+    }
+  }
+  #container1-hadith-text h2 {
+    color: rgb(188, 252, 10);
+    text-align: end;
+    font-family: "Amiri", serif;
+    font-weight: 400;
+    font-size: 5.8vw; /* Converted font size to vw */
+    font-style: normal;
+    line-height: 1.6;
+  }
+
+  /* CONTAINER 2 */
+  #container-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container2-pic {
+    width: 100%; /* Adjust width for smaller screens */
+    margin-top: 10px; /* Adjust margin */
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  #container2-pic img {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  #container2-text {
+    width: 100%; /* Adjust width for smaller screens */
+    margin-top: 10px; /* Adjust margin */
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+
+  #container2-text h1 {
+    font-size: 4.8vw; /* Converted font size to vw */
+  }
+
+  #container2-text p {
+    font-size: 4vw; /* Converted font size to vw */
+    margin-top: 5px;
+    font-weight: 530;
+    line-height: 1.25;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  /* CONTAINER 3 */
+  .container3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding-bottom: 2rem;
+  }
+  .container3 h1 {
+    text-align: start;
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+  }
+  .container3-img {
+    order: 2;
+    width: 100%;
+    height: auto;
+  }
+  .container3-img img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 2%;
+    position: relative;
+    left: 0%;
+    top: 0.8rem;
+  }
+  #container3-text {
+    order: 1;
+    position: relative;
+    width: 100%;
+    left: 0%;
+  }
+  #container3-text h1 {
+    font-family: "Salsa", cursive;
+  }
+  #container3-text p {
+    font-family: "Alegreya";
+    font-weight: 400;
+    font-size: 4vw; /* Converted font size to vw */
+    text-align: justify;
+    line-height: 1.25;
+    max-width: 100%;
+  }
+
+  /*course container*/
+  #course-heading {
+    margin-top: 2rem;
+  }
+  .course_cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* @media only screen and (min-width: 376px) and (max-width: 480px) {
+ 
+} */
+
+/* iPads, Tablets (481px - 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #whatsapp_logo a,
+  #mail_logo a {
+    padding: 0px 10px;
+  }
+  #call_logo a {
+    display: none;
+  }
+}
+
+/* Small screens, laptops (769px - 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* CSS rules for small screens and laptops */
+}
+
+/* Desktops, large screens (1025px - 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  /* CSS rules for desktops and large screens */
+}
+
+/* Extra large screens, TV (1201px and more) */
+@media only screen and (min-width: 1201px) {
+  /* CSS rules for extra large screens and TVs */
+}

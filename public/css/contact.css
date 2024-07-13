@@ -1,0 +1,118 @@
+    /* Optional custom styles */
+    body {
+        background-color: #ffffff;
+      }
+      h5{
+          font-family: "Alegreya";
+          font-style:bold;
+      }
+      .contact-form {
+        width: 100%;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .form-group label {
+        font-weight: bold;
+      }
+      #contacts{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      #call{
+        background-color: #617999;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+     #call-logo {
+      background-color: white;
+      border: 1px solid black;
+      height:100px;
+      width: 100px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+      img{
+        height: 45px;
+        width: 45px;
+        
+      }
+     }
+     #phone_numb{
+      color: white;
+      margin-top: 15px;
+      p{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+     }
+      #whatsapp{
+        background-color: #6e5979;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+     #whatsapp-logo {
+      background-color: white;
+      margin-top: 30px;
+      border: 1px solid black;
+      height:100px;
+      width: 100px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        height: 50px;
+        width: 50px;
+        
+      }
+     }
+     #whatsapp_numb{
+      margin-top: 15px;
+      color: white;
+     }
+      #email-section{
+        background-color: #7D6592;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+     #email_logo {
+      background-color: white;
+      margin-top: 30px;
+      border: 1px solid black;
+      height:100px;
+      width: 100px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        height: 37px;
+        width: 64px;
+        
+      }
+     }
+     #mail{
+      color:white ;
+      margin-top: 15px;
+     
+     }
+     @media only screen and (max-width:480px)and (min-width:320px){
+      
+      #contacts{
+        grid-template-columns: repeat(1,1fr);
+      }
+    }

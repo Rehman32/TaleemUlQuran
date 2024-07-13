@@ -1,0 +1,269 @@
+/* FOOTER */
+.site-footer {
+  background-color: rgb(27, 27, 59);
+  color: rgb(232, 229, 229);
+  padding: 40px 0;
+}
+
+.container-1 {
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.container-1 h6 {
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  flex-basis: 21%;
+}
+.footer-section p {
+  color: rgb(131, 131, 131);
+  line-height: 1.6;
+}
+.footer-nav ul {
+  color: rgb(79, 76, 76);
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: color 0.3s ease in;
+}
+
+.footer-nav ul li a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: rgb(131, 131, 131);
+  transition: color 0.3s ease;
+}
+.footer-nav ul li a:hover {
+  color: white;
+}
+.footer-nav ul li::before {
+  content: "\203A";
+  font-weight: 550;
+  font-size: 23px;
+  color: #ff6f61;
+  display: inline-block;
+  width: 1.5em;
+}
+
+.contact-info {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 20px;
+}
+
+.contact-info li a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: rgb(131, 131, 131);
+  display: flex;
+  transition: color 0.3s ease;
+}
+.contact-info li a img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.contact-info li a:nth-child(1) img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.contact-info a:nth-child(2) img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.contact-info li a:nth-child(3) img {
+  height: 10px;
+  width: 25px;
+  margin-right: 10px;
+}
+/* .contact-info li a::before {
+                                        content: url('../images/pics/whatsapp-logo.png');
+                                        height: 30px;
+                                        width: 30px;
+                                        margin-right: 5px; /* Adjust as needed for spacing */
+
+.contact-info li a:hover {
+  color: white;
+}
+
+.read-more {
+  color: rgb(87, 100, 26);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: white;
+}
+.copyright {
+  border-top: 1px solid #503a6c;
+  color: rgb(131, 131, 131);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.social-media-links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#insta-icon,
+#fb-icon,
+#twitter-icon {
+  position: relative;
+  border-radius: 10%;
+  margin-right: 20px;
+}
+#insta-icon img {
+  height: 30px;
+  margin-bottom: 18px;
+  width: 30px;
+  transition: 0.3s ease;
+}
+#insta-icon img:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+#fb-icon img {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 18px;
+  transition: 0.3s ease;
+}
+#fb-icon img:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+#twitter-icon img {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 18px;
+  transition: 0.3s ease-in-out;
+}
+#twitter-icon img:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+
+@media (max-width: 768px) and (min-width: 320px) {
+  .container-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-section.about-us p {
+    text-align: justify;
+  }
+
+  .footer-section.navigation, .footer-section.get-in-touch {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .footer-section.navigation {
+    margin-bottom: 20px;
+  }
+
+  .footer-nav ul {
+    padding-left: 0;
+  }
+
+  .footer-nav ul li {
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .footer-nav ul li::before {
+    content: "\203A"; /* Customize the bullet point if needed */
+    font-weight: 550;
+    font-size: 23px;
+    color: #ff6f61;
+    display: inline-block;
+    width: 1.5em;
+  }
+
+  .footer-nav ul li a {
+    display: inline-block;
+    width: calc(100% - 1.5em);
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-info li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 0;
+    color: rgb(131, 131, 131);
+    transition: color 0.3s ease;
+  }
+
+  .contact-info li a img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .contact-info li a::before {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+  }
+
+  .contact-info li a:hover {
+    color: white;
+  }
+
+  .copyright {
+    border-top: 1px solid #503a6c;
+    color: rgb(131, 131, 131);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .copyright p {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .social-media-links {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+
+  #insta-icon img, #fb-icon img, #twitter-icon img {
+    height: 25px;
+    width: 25px;
+    margin-bottom: 0;
+    margin-right: 0px;
+  }
+}

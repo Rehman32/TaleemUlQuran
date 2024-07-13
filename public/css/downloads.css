@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.download-items {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 50px;
+}
+
+.card {
+  padding: 10px;
+  width: 300px;
+  background-color: #6ebe64;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+  display: flex;
+}
+.details img{
+width: 60px;
+}
+.details h6 a{
+  position: relative;
+  margin-left: 5px;
+  top: 30px;
+  color: #333;
+  text-decoration: none;
+}
+.details h6 a:hover{
+  color:blueviolet;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 425px) {
+  .download-items {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .download-items {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
