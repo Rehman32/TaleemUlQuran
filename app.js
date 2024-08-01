@@ -17,12 +17,18 @@ const connection = mysql.createConnection({
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
 });
+// const connection = mysql.createConnection({
+//   host: 'localhost',
+//   user: 'root',
+//   password: 'naeem.32',
+//   database: 'taleemulquran'
+// });
 
-// Connect to MySQL
-connection.connect((err) => {
-  if (err) throw err;
-  console.log("Connected to MySQL database");
-});
+// // Connect to MySQL
+// connection.connect((err) => {
+//   if (err) throw err;
+//   console.log("Connected to MySQL database");
+// });
 
 // For serving static files
 app.use(express.static(path.join(__dirname, "public")));
@@ -37,49 +43,49 @@ app.get("/", (req, res) => {
 });
 
 // Handle form submission
-app.post("/submit-contacts", (req, res) => {
-  const { name, email, message } = req.body;
-  const insertQuery =
-    "INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)";
-  connection.query(insertQuery, [name, email, message], (err, result) => {
-    if (err) {
-      console.error("Error inserting data:", err);
-      res.status(500).send("Error submitting data");
-    } else {
-      console.log("Data inserted successfully");
-      res.redirect("/"); // Redirect back to homepage or any other page
-    }
-  });
-});
+// app.post("/submit-contacts", (req, res) => {
+//   const { name, email, message } = req.body;
+//   const insertQuery =
+//     "INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)";
+//   connection.query(insertQuery, [name, email, message], (err, result) => {
+//     if (err) {
+//       console.error("Error inserting data:", err);
+//       res.status(500).send("Error submitting data");
+//     } else {
+//       console.log("Data inserted successfully");
+//       res.redirect("/"); // Redirect back to homepage or any other page
+//     }
+//   });
+// });
 
 // Handle registration form submission
-app.post("/submit-registration", (req, res) => {
-  const {
-    name,
-    guardianName,
-    gender,
-    age,
-    course,
-    phone,
-    country,
-    email,
-    message,
-  } = req.body;
-  const insertQuery =
-    "INSERT INTO registrations (name, guardian_name, gender, age, course, phone, country, email, message) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
-  connection.query(
-    insertQuery,
-    [name, guardianName, gender, age, course, phone, country, email, message],
-    (err, result) => {
-      if (err) {
-        console.error("Error inserting data:", err);
-        res.status(500).send("Error submitting registration");
-      } else {
-        console.log("Registration submitted successfully");
-      }
-    }
-  );
-});
+// app.post("/submit-registration", (req, res) => {
+//   const {
+//     name,
+//     guardianName,
+//     gender,
+//     age,
+//     course,
+//     phone,
+//     country,
+//     email,
+//     message,
+//   } = req.body;
+//   const insertQuery =
+//     "INSERT INTO registrations (name, guardian_name, gender, age, course, phone, country, email, message) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+//   connection.query(
+//     insertQuery,
+//     [name, guardianName, gender, age, course, phone, country, email, message],
+//     (err, result) => {
+//       if (err) {
+//         console.error("Error inserting data:", err);
+//         res.status(500).send("Error submitting registration");
+//       } else {
+//         console.log("Registration submitted successfully");
+//       }
+//     }
+//   );
+// });
 
 // Other routes...
 app.get("/aboutus", (req, res) => {
@@ -104,6 +110,7 @@ app.get("/downloads", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "downloads.html"));
 });
 
-app.listen(port, "0.0.0.0", () => {
-  console.log(`Server running at http://0.0.0.0:${port}/`);
+app.listen(port,() => {
+  console.log(`Server running at http://${port}/`);
 });
+ 
