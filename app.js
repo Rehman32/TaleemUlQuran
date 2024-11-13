@@ -37,7 +37,9 @@ app.use(
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "index.html"));
 });
-
+app.get('/google0e250588723b6647.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'google0e250588723b6647.html'));
+});
 // Commented out form submission handlers
 /*
 app.post("/submit-contacts", (req, res) => {
