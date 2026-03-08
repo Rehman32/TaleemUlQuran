@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-header__title">Resources & Downloads</h1>
+        <p class="page-header__breadcrumb"><a href="/">Home</a> / Resources</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Downloadable Resources">
+      <div class="container">
+        <div class="text-center">
+          <span class="section__label">Free Resources</span>
+          <h2 class="section__title">Islamic Resources & Downloads</h2>
+          <p class="section__subtitle">Download free Islamic resources including Masnoon Duas and the Holy Quran in PDF format.</p>
+        </div>
+
+        <div class="resources-grid">
+          <a href="#" class="resource-card fade-in" id="resource-duas">
+            <div class="resource-card__icon">PDF</div>
+            <div class="resource-card__info">
+              <p class="resource-card__name">Masnoon Duas Collection</p>
+              <p class="resource-card__size">Essential daily duas</p>
+            </div>
+            <span class="btn btn--primary" style="flex-shrink:0">Download</span>
+          </a>
+
+          <a href="#" class="resource-card fade-in" id="resource-quran">
+            <div class="resource-card__icon">PDF</div>
+            <div class="resource-card__info">
+              <p class="resource-card__name">Quran Kareem (Full)</p>
+              <p class="resource-card__size">Complete Holy Quran</p>
+            </div>
+            <span class="btn btn--primary" style="flex-shrink:0">Download</span>
+          </a>
+
+          <a href="#" class="resource-card fade-in" id="resource-noorani">
+            <div class="resource-card__icon">PDF</div>
+            <div class="resource-card__info">
+              <p class="resource-card__name">Noorani Qaida</p>
+              <p class="resource-card__size">Foundational Qaida book</p>
+            </div>
+            <span class="btn btn--primary" style="flex-shrink:0">Download</span>
+          </a>
+
+          <a href="#" class="resource-card fade-in" id="resource-tajweed">
+            <div class="resource-card__icon">PDF</div>
+            <div class="resource-card__info">
+              <p class="resource-card__name">Tajweed Rules Guide</p>
+              <p class="resource-card__size">Tajweed rules reference</p>
+            </div>
+            <span class="btn btn--primary" style="flex-shrink:0">Download</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

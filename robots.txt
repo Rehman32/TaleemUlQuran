@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://taleem-ul-quran-online-quran-academy.vercel.app/sitemap.xml

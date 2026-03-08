@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-header__title">Our Pricing</h1>
+        <p class="page-header__breadcrumb"><a href="/">Home</a> / Pricing</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Fee Information">
+      <div class="container">
+        <div class="text-center">
+          <span class="section__label">Transparent Pricing</span>
+          <h2 class="section__title">Affordable Plans for Everyone</h2>
+          <p class="section__subtitle">We offer an affordable fee structure with scholarships for needy and talented students. Contact us for detailed fee information.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card fade-in" id="plan-weekend">
+            <h3 class="pricing-card__name">Weekend Plan</h3>
+            <ul class="pricing-card__features">
+              <li>Online classes</li>
+              <li>30 minutes per class</li>
+              <li>2 classes per week</li>
+              <li>One-on-one sessions</li>
+              <li>2 days FREE trial</li>
+              <li>Male & female tutors</li>
+              <li>Flexible timing</li>
+            </ul>
+            <a href="/register" class="btn btn--outline btn--lg" style="width:100%">Register Now</a>
+          </div>
+
+          <div class="pricing-card pricing-card--popular fade-in" id="plan-standard">
+            <h3 class="pricing-card__name">Standard Plan</h3>
+            <ul class="pricing-card__features">
+              <li>Online classes</li>
+              <li>30 minutes per class</li>
+              <li>5 classes per week</li>
+              <li>One-on-one sessions</li>
+              <li>2 days FREE trial</li>
+              <li>Male & female tutors</li>
+              <li>Flexible timing</li>
+            </ul>
+            <a href="/register" class="btn btn--primary btn--lg" style="width:100%">Register Now</a>
+          </div>
+
+          <div class="pricing-card fade-in" id="plan-professional">
+            <h3 class="pricing-card__name">Professional Plan</h3>
+            <ul class="pricing-card__features">
+              <li>Online classes</li>
+              <li>60 minutes per class</li>
+              <li>2 classes per week</li>
+              <li>One-on-one sessions</li>
+              <li>2 days FREE trial</li>
+              <li>Male & female tutors</li>
+              <li>Flexible timing</li>
+            </ul>
+            <a href="/register" class="btn btn--outline btn--lg" style="width:100%">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="section section--alt" aria-label="Contact for custom plans">
+      <div class="container">
+        <div class="cta-banner fade-in">
+          <h2 class="cta-banner__title">Need a Custom Plan?</h2>
+          <p class="cta-banner__text">Don't worry — we offer customized plans for every need. Contact us through WhatsApp, phone, or email to discuss your requirements.</p>
+          <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+            <a href="https://wa.me/+971554567772" target="_blank" rel="noopener" class="btn btn--accent btn--lg">WhatsApp Us</a>
+            <a href="/contact" class="btn btn--white btn--lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>
